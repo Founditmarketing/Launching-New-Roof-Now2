@@ -1,41 +1,42 @@
 # New Roof Now — Design System
 
 ## Vibe
-Subtle fire. Warm, confident, intense without being loud. Think ember glow, not fireworks. Every accent should feel like heat radiating off desert asphalt.
+Desert oasis. Fresh, confident, alive — like the first monsoon rain on a saguaro. Green evokes growth and reliability; yellow radiates Arizona sunshine. Every accent should feel like new life under the desert sun.
 
 ## Palette
 
 | Token          | Hex       | Role                                      |
 |----------------|-----------|-------------------------------------------|
-| `charcoal`     | `#1A1210` | Base background — warm black, not sterile  |
-| `surface`      | `#231C17` | Cards, elevated surfaces                   |
-| `steel`        | `#2E2520` | Borders, secondary panels                  |
-| `ember`        | `#E8540C` | Primary accent — hot orange                |
-| `crimson`      | `#C41E1E` | Secondary accent — deep red for CTAs       |
-| `amber`        | `#F59E0B` | Micro highlights — stars, badges, sparks   |
-| `ash`          | `#A39890` | Muted body text (warm gray, not cool)      |
+| `az-green`     | `#1B5E20` | Primary — deep saguaro green              |
+| `az-green-mid` | `#2E7D32` | Mid green — hover states, surfaces        |
+| `az-green-deep`| `#0D3B0F` | Footer, dropdowns — extra dark green      |
+| `az-gold`      | `#F9A825` | Primary accent — warm yellow              |
+| `az-gold-light`| `#FFD54F` | Light yellow — emphasis, active states     |
+| `az-gold-pale` | `#FFF9C4` | Pale yellow — badges, soft backgrounds     |
+| `az-copper`    | `#F57F17` | Secondary accent — amber-orange           |
+| `az-sand`      | `#F9F4E8` | Base background — warm cream              |
+| `az-dune`      | `#EDE5CC` | Cards, elevated surfaces                   |
+| `az-rock`      | `#8C7B65` | Muted body text (warm gray)               |
 
-### Gradient: Ember Line
-`linear-gradient(90deg, #E8540C, #C41E1E)` — used on borders, underlines, and the CTA band.
+### Gradient: Green Gold
+`linear-gradient(90deg, #1B5E20, #F9A825)` — used on borders, underlines, and the CTA divider.
 
 ### Glow
-`box-shadow: 0 0 30px rgba(232, 84, 12, 0.12)` — warm ambient glow on cards and CTAs on hover.
+`box-shadow: 0 0 30px rgba(27, 94, 32, 0.12)` — warm ambient glow on cards and CTAs on hover.
 
 ## Typography
 
 | Use       | Family              | Weight   | Notes                                     |
-|-----------|---------------------|----------|--------------------------------------------|
-| Headlines | **Teko**            | 600-700  | Angular, sharp, blade-like. Feels hot.     |
-| Body      | **Barlow**          | 400-700  | Clean condensed, modern, great readability |
-| Mono/Data | **JetBrains Mono**  | 400      | Kept for data labels and tech details      |
+|-----------|---------------------|----------|-------------------------------------------| 
+| Headlines | **Fraunces**        | 600-700  | Warm optical serif, inviting, premium     |
+| Body      | **DM Sans**         | 400-700  | Clean geometric sans, excellent readability|
+| Mono/Data | **JetBrains Mono**  | 400-700  | Data labels and tech details              |
 
-Teko tracking: `tracking-normal` to `tracking-wide` — it's naturally condensed so don't tighten further.
-
-## Fire Touches (subtle, not tacky)
-- Ember gradient underlines on section labels
-- Warm glow on hover for cards and CTAs (`ember` at 12% opacity)
-- Gradient text on hero keyword (`ember` to `crimson`)
-- Dot grid pattern uses warm ember tint instead of white
-- CTA band uses ember-to-crimson gradient background
-- Star ratings in `amber` (warm gold)
-- Status dot pulses in `ember` with glow shadow
+## Green & Gold Touches (subtle, not tacky)
+- Gold accent underlines on section labels
+- Warm green glow on hover for cards and CTAs (green at 12% opacity)
+- Yellow emphasis text on hero keywords
+- Diagonal ray pattern uses gold/yellow tint
+- CTA submit buttons use warm yellow with amber hover
+- Star ratings in yellow gold
+- Ray divider alternates green and yellow stripes

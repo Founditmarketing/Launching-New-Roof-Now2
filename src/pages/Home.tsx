@@ -60,11 +60,11 @@ export function Home() {
 
       {/* ── SPLIT HERO ── */}
       <section className="min-h-screen grid lg:grid-cols-2 pt-[73px]">
-        {/* Left: copy — Arizona flag blue */}
-        <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-20 bg-az-blue relative overflow-hidden">
-          {/* Subtle gold diagonal rays in background */}
+        {/* Left: copy — Arizona green */}
+        <div className="flex flex-col justify-center px-8 lg:px-16 xl:px-24 py-20 bg-az-green relative overflow-hidden">
+          {/* Subtle yellow diagonal rays in background */}
           <div className="absolute inset-0 opacity-[0.04] pointer-events-none"
-            style={{backgroundImage: 'repeating-linear-gradient(45deg, #F5B31A 0px, #F5B31A 2px, transparent 2px, transparent 40px)'}} />
+            style={{backgroundImage: 'repeating-linear-gradient(45deg, #FFD54F 0px, #FFD54F 2px, transparent 2px, transparent 40px)'}} />
 
           <motion.div {...fu} className="relative z-10">
             <span className="font-mono-label text-[11px] font-bold tracking-[0.2em] uppercase text-az-gold mb-6 block">
@@ -79,7 +79,7 @@ export function Home() {
             </p>
             <div className="flex flex-wrap gap-4 mb-12">
               <a href="tel:4808451833" id="hero-call-btn" className="btn-brick flex items-center gap-3 text-base"><Phone size={18}/> (480) 845-1833</a>
-              <Link to="/contact" id="hero-estimate-btn" className="border-2 border-white/40 text-white px-8 py-4 font-bold text-sm hover:bg-white hover:text-az-blue transition-all">Free Estimate</Link>
+              <Link to="/contact" id="hero-estimate-btn" className="border-2 border-white/40 text-white px-8 py-4 font-bold text-sm hover:bg-white hover:text-az-green transition-all">Free Estimate</Link>
             </div>
             <div className="flex flex-wrap gap-10 border-t border-white/15 pt-10">
               {[{v:'5.0★',l:'Google Rating'},{v:'20+',l:'Yrs Experience'},{v:'BBB A+',l:'Accredited'},{v:'2 ROC',l:'AZ Licensed'}].map((s,i)=>(
@@ -95,8 +95,8 @@ export function Home() {
         {/* Right: Craven Construction project photo */}
         <div className="relative hidden lg:block">
           <img src="/images/nrn-hero.png" alt="Roofing Removal & Replacement of AZ project" className="absolute inset-0 w-full h-full object-cover object-top" />
-          <div className="absolute inset-0 bg-gradient-to-r from-az-blue via-az-blue/10 to-transparent w-24"/>
-          <div className="absolute bottom-10 right-10 bg-az-blue/90 border border-az-gold/30 p-5 backdrop-blur-sm">
+          <div className="absolute inset-0 bg-gradient-to-r from-az-green via-az-green/10 to-transparent w-24"/>
+          <div className="absolute bottom-10 right-10 bg-az-green/90 border border-az-gold/30 p-5 backdrop-blur-sm">
             <div className="text-az-gold font-mono-label text-xs font-bold uppercase tracking-widest mb-1">Arizona Climate</div>
             <div className="text-white font-display text-lg">115°F Rated Materials</div>
             <div className="text-white/50 text-xs mt-1">Monsoon. UV. Wind. Covered.</div>
@@ -107,12 +107,12 @@ export function Home() {
       {/* ── TICKER ── */}
       <div className="bg-az-gold overflow-hidden py-3 border-y border-az-copper/30">
         <div className="flex whitespace-nowrap marquee-track gap-0">
-          {[...Array(4)].map((_, i) => <span key={i} className="text-xs font-mono-label font-bold text-az-blue-deep uppercase tracking-widest shrink-0">{TICKER}</span>)}
+          {[...Array(4)].map((_, i) => <span key={i} className="text-xs font-mono-label font-bold text-az-green-deep uppercase tracking-widest shrink-0">{TICKER}</span>)}
         </div>
       </div>
 
       {/* ── ARIZONA CLIMATE CALLOUTS ── */}
-      <section className="py-16 bg-az-blue border-b border-white/10">
+      <section className="py-16 bg-az-green border-b border-white/10">
         <div className="max-w-screen-xl mx-auto px-6 lg:px-16">
           <div className="grid md:grid-cols-3 gap-px bg-white/10">
             {[
@@ -121,7 +121,7 @@ export function Home() {
               { Icon: Wind, title: 'Haboob Resistant', desc: 'Dust storms mean abrasive sandblasting for your roof surface every summer. We spec UV-stabilized, abrasion-resistant materials that outlast the Sonoran Desert\'s worst.' },
             ].map(({ Icon, title, desc }, i) => (
               <motion.div key={i} {...fu} transition={{delay: i * 0.1}}
-                className="bg-az-blue p-10 flex flex-col gap-4">
+                className="bg-az-green p-10 flex flex-col gap-4">
                 <div className="w-12 h-12 bg-az-gold/20 border border-az-gold/30 flex items-center justify-center">
                   <Icon size={22} className="text-az-gold" />
                 </div>
@@ -249,7 +249,7 @@ export function Home() {
           </motion.div>
           <motion.div {...fu} transition={{delay:0.15}} className="relative">
             <img src="/images/nrn-office.jpg" alt="Roofing Removal & Replacement of AZ team" className="w-full h-[500px] object-cover object-center"/>
-            <div className="absolute -bottom-6 -right-6 bg-az-blue p-8 hidden lg:block border-t-4 border-az-gold">
+            <div className="absolute -bottom-6 -right-6 bg-az-green p-8 hidden lg:block border-t-4 border-az-gold">
               <div className="font-display text-4xl text-white mb-1">20+</div>
               <div className="text-xs font-bold uppercase tracking-wider text-az-gold">Years in Arizona</div>
             </div>
@@ -258,7 +258,7 @@ export function Home() {
       </section>
 
       {/* ── PROCESS ── */}
-      <section className="py-24 bg-az-blue">
+      <section className="py-24 bg-az-green">
         <div className="max-w-screen-xl mx-auto px-6 lg:px-16">
           <motion.div {...fu} className="mb-16 text-center">
             <span className="text-xs font-bold uppercase tracking-widest text-az-gold font-mono-label block mb-4">Our Process</span>
@@ -312,10 +312,10 @@ export function Home() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-24 md:py-32 bg-az-blue relative overflow-hidden">
-        {/* Gold ray decorative lines */}
+      <section className="py-24 md:py-32 bg-az-green relative overflow-hidden">
+        {/* Yellow ray decorative lines */}
         <div className="absolute inset-0 opacity-[0.06] pointer-events-none"
-          style={{backgroundImage: 'repeating-linear-gradient(60deg, #F5B31A 0px, #F5B31A 2px, transparent 2px, transparent 60px)'}} />
+          style={{backgroundImage: 'repeating-linear-gradient(60deg, #FFD54F 0px, #FFD54F 2px, transparent 2px, transparent 60px)'}} />
         <div className="max-w-4xl mx-auto px-6 lg:px-16 relative z-10">
           <motion.div {...fu} className="text-center mb-12">
             <span className="text-xs font-bold uppercase tracking-widest text-az-gold font-mono-label block mb-4">Free · No Obligation · Same-Day Callback</span>

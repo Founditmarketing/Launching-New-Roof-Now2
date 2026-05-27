@@ -13,9 +13,9 @@ export function ServiceDetail() {
     <div className="bg-az-sand pt-[73px] min-h-screen">
 
       {/* Hero — placeholder until real photos are sourced */}
-      <section className="relative h-[40vh] overflow-hidden bg-az-blue-mid flex items-center justify-center">
+      <section className="relative h-[40vh] overflow-hidden bg-az-green-mid flex items-center justify-center">
         <div className="absolute inset-0 opacity-[0.06] pointer-events-none"
-          style={{backgroundImage: 'repeating-linear-gradient(45deg, #F5B31A 0px, #F5B31A 2px, transparent 2px, transparent 40px)'}} />
+          style={{backgroundImage: 'repeating-linear-gradient(45deg, #FFD54F 0px, #FFD54F 2px, transparent 2px, transparent 40px)'}} />
         <div className="absolute bottom-0 left-0 right-0 pb-14 relative z-10">
           <div className="max-w-screen-xl mx-auto px-6 lg:px-16">
             <Link to="/services"
@@ -50,7 +50,7 @@ export function ServiceDetail() {
           </div>
 
           {/* Process — AZ blue */}
-          <div className="bg-az-blue p-12 md:p-20 on-navy">
+          <div className="bg-az-green p-12 md:p-20 on-green">
             <h2 className="font-display text-4xl text-white mb-14">Our Proven Process</h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
               {service.process.map((p, idx) => (
@@ -104,7 +104,7 @@ export function ServiceDetail() {
             {related.map(s => (
               <Link key={s.id} to={`/services/${s.id}`}
                 className="group border border-az-border bg-white overflow-hidden hover:shadow-md hover:shadow-az-gold/10 hover:border-az-gold transition-all">
-                <div className="h-44 bg-az-blue-mid flex items-center justify-center">
+                <div className="h-44 bg-az-green-mid flex items-center justify-center">
                   <span className="font-mono-label text-white/15 text-xs uppercase tracking-widest">Photo Coming Soon</span>
                 </div>
                 <div className="p-6 flex items-center justify-between">

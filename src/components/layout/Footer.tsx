@@ -3,7 +3,7 @@ import { Phone, Facebook, Instagram } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="bg-az-blue-deep text-white">
+    <footer className="bg-az-green-deep text-white">
       {/* Arizona flag ray divider at top */}
       <div className="az-ray-divider" />
 

@@ -9,10 +9,10 @@ export function About() {
     <div className="bg-az-sand pt-[73px]">
 
       {/* Hero */}
-      <section className="py-24 md:py-36 bg-az-blue relative overflow-hidden border-b border-white/10">
-        {/* Gold ray background */}
+      <section className="py-24 md:py-36 bg-az-green relative overflow-hidden border-b border-white/10">
+        {/* Yellow ray background */}
         <div className="absolute inset-0 opacity-[0.05] pointer-events-none"
-          style={{backgroundImage: 'repeating-linear-gradient(45deg, #F5B31A 0px, #F5B31A 2px, transparent 2px, transparent 40px)'}} />
+          style={{backgroundImage: 'repeating-linear-gradient(45deg, #FFD54F 0px, #FFD54F 2px, transparent 2px, transparent 40px)'}} />
         <div className="max-w-screen-xl mx-auto px-6 lg:px-16 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-28 items-center">
             <motion.div {...fadeUp}>
@@ -117,7 +117,7 @@ export function About() {
       </section>
 
       {/* Credential bar */}
-      <section className="py-16 bg-az-blue on-navy">
+      <section className="py-16 bg-az-green on-green">
         <div className="max-w-screen-xl mx-auto px-6 lg:px-16 text-center">
           <h3 className="font-display text-3xl text-white mb-10 italic">The Roofing Removal & Replacement of AZ Logic</h3>
           <p className="text-white/60 text-sm md:text-base leading-relaxed mb-10 max-w-2xl mx-auto">

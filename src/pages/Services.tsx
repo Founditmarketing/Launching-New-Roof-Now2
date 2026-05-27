@@ -10,9 +10,9 @@ export function Services() {
     <div className="bg-az-sand pt-[73px]">
 
       {/* Header */}
-      <section className="py-20 md:py-28 bg-az-blue relative overflow-hidden border-b border-white/10">
+      <section className="py-20 md:py-28 bg-az-green relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 opacity-[0.05] pointer-events-none"
-          style={{backgroundImage: 'repeating-linear-gradient(45deg, #F5B31A 0px, #F5B31A 2px, transparent 2px, transparent 40px)'}} />
+          style={{backgroundImage: 'repeating-linear-gradient(45deg, #FFD54F 0px, #FFD54F 2px, transparent 2px, transparent 40px)'}} />
         <div className="max-w-screen-xl mx-auto px-6 lg:px-16 relative z-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <span className="section-label mb-5 block">Arizona's Full-Spectrum Roofing Coverage</span>
@@ -38,7 +38,7 @@ export function Services() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 </div>
               ) : (
-                <div className="lg:col-span-2 h-64 lg:h-auto bg-az-blue-mid flex items-center justify-center">
+                <div className="lg:col-span-2 h-64 lg:h-auto bg-az-green-mid flex items-center justify-center">
                   <span className="font-mono-label text-white/15 text-xs uppercase tracking-widest">Photo Coming Soon</span>
                 </div>
               )}
@@ -125,7 +125,7 @@ export function Services() {
       </section>
 
       {/* Monsoon band */}
-      <section className="py-20 bg-az-blue on-navy">
+      <section className="py-20 bg-az-green on-green">
         <div className="max-w-screen-xl mx-auto px-6 lg:px-16 grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="font-display text-4xl text-white mb-5">Dealing with <em className="text-az-gold-light">Monsoon Damage?</em></h3>
@@ -135,7 +135,7 @@ export function Services() {
           </div>
           <div className="flex justify-start lg:justify-end">
             <Link to="/services/commercial"
-              className="border-2 border-white text-white px-10 py-5 font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-az-blue transition-all">
+              className="border-2 border-white text-white px-10 py-5 font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-az-green transition-all">
               Commercial &amp; Claim Help
             </Link>
           </div>

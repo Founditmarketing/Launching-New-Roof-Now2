@@ -21,7 +21,7 @@ export function Contact() {
         <div className="grid lg:grid-cols-5 gap-0 border border-az-border mb-0">
 
           {/* Info panel — AZ blue */}
-          <div className="lg:col-span-2 bg-az-blue p-10 md:p-14 on-navy flex flex-col justify-between gap-12">
+          <div className="lg:col-span-2 bg-az-green p-10 md:p-14 on-green flex flex-col justify-between gap-12">
             <div className="space-y-10">
               <div>
                 <div className="text-xs font-bold uppercase tracking-widest text-az-gold font-mono-label mb-4">Phone</div>

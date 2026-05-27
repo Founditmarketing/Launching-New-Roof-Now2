@@ -1,23 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  /* ── Arizona Flag Palette ── */
-  /* Gold / Copper rays */
-  --color-az-gold: #D4920A;
-  --color-az-gold-light: #F5B31A;
-  --color-az-gold-pale: #FEF3D0;
-  --color-az-gold-warm: #FDF0B8;
+  /* ── Arizona Green & Yellow Palette ── */
+  /* Deep saguaro greens — primary */
+  --color-az-green: #1B5E20;
+  --color-az-green-mid: #2E7D32;
+  --color-az-green-deep: #0D3B0F;
 
-  /* Blue — Arizona flag lower half */
-  --color-az-blue: #002868;
-  --color-az-blue-mid: #003580;
-  --color-az-blue-deep: #001540;
+  /* Warm yellows — accent */
+  --color-az-gold: #F9A825;
+  --color-az-gold-light: #FFD54F;
+  --color-az-gold-pale: #FFF9C4;
+  --color-az-gold-warm: #FFF8E1;
 
-  /* Copper — Arizona star & accent */
-  --color-az-copper: #B87333;
-  --color-az-copper-dark: #8B5A1A;
+  /* Amber-orange — secondary accent */
+  --color-az-copper: #F57F17;
+  --color-az-copper-dark: #E65100;
 
-  /* Desert neutrals — sand & stone */
+  /* Desert neutrals — sand & stone (unchanged) */
   --color-az-sand: #F9F4E8;
   --color-az-dune: #EDE5CC;
   --color-az-stone: #C8B99A;
@@ -28,12 +28,12 @@
   /* Semantic aliases for backward compatibility */
   --color-nrn-cream: #F9F4E8;
   --color-nrn-warm: #EDE5CC;
-  --color-nrn-brick: #D4920A;
-  --color-nrn-brick-dark: #B87333;
-  --color-nrn-navy: #002868;
-  --color-nrn-navy-mid: #003580;
-  --color-nrn-navy-deep: #001540;
-  --color-nrn-gold: #F5B31A;
+  --color-nrn-brick: #F9A825;
+  --color-nrn-brick-dark: #F57F17;
+  --color-nrn-navy: #1B5E20;
+  --color-nrn-navy-mid: #2E7D32;
+  --color-nrn-navy-deep: #0D3B0F;
+  --color-nrn-gold: #FFD54F;
   --color-nrn-text: #1A1208;
   --color-nrn-muted: #8C7B65;
   --color-nrn-border: #DDD0B0;
@@ -54,26 +54,26 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-::selection { background: #D4920A; color: white; }
+::selection { background: #1B5E20; color: white; }
 
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #EDE5CC; }
-::-webkit-scrollbar-thumb { background: #D4920A; border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: #1B5E20; border-radius: 3px; }
 
 /* Typography helpers */
 .font-display { font-family: 'Fraunces', Georgia, serif; }
 .font-sans-body { font-family: 'DM Sans', system-ui, sans-serif; }
 .font-mono-label { font-family: 'JetBrains Mono', monospace; }
 
-/* Arizona sun ray gradient — applied to hero overlays */
+/* Arizona desert gradient — green to gold */
 .az-sun-gradient {
   background: linear-gradient(
     135deg,
-    #D4920A 0%,
-    #F5B31A 20%,
-    #D4920A 40%,
-    #002868 40%,
-    #002868 100%
+    #1B5E20 0%,
+    #2E7D32 20%,
+    #1B5E20 40%,
+    #F9A825 40%,
+    #FFD54F 100%
   );
 }
 
@@ -103,9 +103,9 @@ body {
   transform: translateY(-3px);
 }
 
-/* Gold / Copper primary button */
+/* Gold / Yellow primary button */
 .btn-brick {
-  background: #D4920A;
+  background: #F9A825;
   color: white;
   display: inline-flex;
   align-items: center;
@@ -117,7 +117,7 @@ body {
   transition: background 0.2s;
   text-decoration: none;
 }
-.btn-brick:hover { background: #B87333; }
+.btn-brick:hover { background: #F57F17; }
 
 /* Outline button */
 .btn-outline {
@@ -135,10 +135,10 @@ body {
 }
 .btn-outline:hover { background: #1A1208; color: white; }
 
-/* Blue outline button */
-.btn-blue-outline {
-  border: 2px solid #002868;
-  color: #002868;
+/* Green outline button */
+.btn-green-outline {
+  border: 2px solid #1B5E20;
+  color: #1B5E20;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -149,27 +149,26 @@ body {
   transition: all 0.2s;
   text-decoration: none;
 }
-.btn-blue-outline:hover { background: #002868; color: white; }
+.btn-green-outline:hover { background: #1B5E20; color: white; }
 
-/* Section label — gold mono */
+/* Section label — yellow mono */
 .section-label {
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #D4920A;
+  color: #F9A825;
 }
 
-/* Navy section text fixes */
-.on-navy h1,.on-navy h2,.on-navy h3,.on-navy h4,
-.on-navy p,.on-navy span,.on-navy li { color: inherit; }
+/* Green section text fixes */
+.on-green h1,.on-green h2,.on-green h3,.on-green h4,
+.on-green p,.on-green span,.on-green li { color: inherit; }
 
-/* ── Force white text on ALL blue backgrounds ── */
-/* Prevents dark body color (#1A1208) from bleeding into blue sections */
-.bg-az-blue,
-.bg-az-blue-mid,
-.bg-az-blue-deep,
+/* ── Force white text on ALL green backgrounds ── */
+.bg-az-green,
+.bg-az-green-mid,
+.bg-az-green-deep,
 .bg-nrn-navy,
 .bg-nrn-navy-mid,
 .bg-nrn-navy-deep {
@@ -177,24 +176,24 @@ body {
 }
 
 
-/* Arizona sun ray divider */
+/* Arizona green & gold divider */
 .az-ray-divider {
   height: 4px;
   background: repeating-linear-gradient(
     90deg,
-    #D4920A 0px, #D4920A 24px,
-    #F5B31A 24px, #F5B31A 48px,
-    #002868 48px, #002868 72px,
-    #002868 72px, #002868 96px
+    #1B5E20 0px, #1B5E20 24px,
+    #2E7D32 24px, #2E7D32 48px,
+    #F9A825 48px, #F9A825 72px,
+    #FFD54F 72px, #FFD54F 96px
   );
 }
 
-/* Gold badge */
+/* Yellow badge */
 .az-badge {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: #D4920A;
+  background: #F9A825;
   color: white;
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px;
@@ -204,12 +203,12 @@ body {
   padding: 4px 10px;
 }
 
-/* Process step number — gold circle */
+/* Process step number — yellow circle */
 .step-num {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: #D4920A;
+  background: #F9A825;
   color: white;
   display: flex;
   align-items: center;

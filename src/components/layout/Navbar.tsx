@@ -8,7 +8,7 @@ export function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-az-blue shadow-lg shadow-az-blue/20">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-az-green shadow-lg shadow-az-green/20">
       {/* Top gold accent line */}
       <div className="h-1 bg-gradient-to-r from-az-gold via-az-gold-light to-az-gold" />
 
@@ -39,7 +39,7 @@ export function Navbar() {
               Services <ChevronDown size={14} />
             </button>
             {servicesOpen && (
-              <div className="absolute top-full left-0 mt-1 w-60 bg-az-blue-deep border border-white/10 shadow-2xl shadow-az-blue-deep/60">
+              <div className="absolute top-full left-0 mt-1 w-60 bg-az-green-deep border border-white/10 shadow-2xl shadow-az-green-deep/60">
                 {SERVICES.map(s => (
                   <Link
                     key={s.id}
@@ -89,7 +89,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-az-blue-deep border-t border-white/10 shadow-2xl">
+        <div className="lg:hidden bg-az-green-deep border-t border-white/10 shadow-2xl">
           <nav className="px-6 py-6 space-y-1">
             {[
               { to: '/', label: 'Home' },
@@ -110,7 +110,7 @@ export function Navbar() {
           </nav>
           <div className="px-6 pb-6 flex flex-col gap-3">
             <a href="tel:4808451833" className="btn-brick text-center">Call (480) 845-1833</a>
-            <Link to="/contact" onClick={() => setMobileOpen(false)} className="btn-blue-outline text-center">Free Inspection</Link>
+            <Link to="/contact" onClick={() => setMobileOpen(false)} className="btn-green-outline text-center">Free Inspection</Link>
           </div>
         </div>
       )}

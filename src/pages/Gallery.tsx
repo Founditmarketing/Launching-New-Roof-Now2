@@ -31,9 +31,9 @@ export function Gallery() {
     <div className="bg-az-sand pt-[73px]">
 
       {/* Header */}
-      <section className="py-20 md:py-28 bg-az-blue relative overflow-hidden border-b border-white/10">
+      <section className="py-20 md:py-28 bg-az-green relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 opacity-[0.05] pointer-events-none"
-          style={{backgroundImage: 'repeating-linear-gradient(45deg, #F5B31A 0px, #F5B31A 2px, transparent 2px, transparent 40px)'}} />
+          style={{backgroundImage: 'repeating-linear-gradient(45deg, #FFD54F 0px, #FFD54F 2px, transparent 2px, transparent 40px)'}} />
         <div className="max-w-screen-xl mx-auto px-6 lg:px-16 relative z-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <span className="section-label mb-5 block">Visual Proof — The NRN Portfolio</span>
@@ -74,8 +74,8 @@ export function Gallery() {
                 className="relative group break-inside-avoid border border-az-border overflow-hidden bg-az-dune hover:shadow-lg hover:shadow-az-gold/10 transition-shadow">
                 <img src={photo.src} alt={photo.title}
                   className="w-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-gradient-to-t from-az-blue-deep/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-5 flex flex-col justify-end">
-                  <span className="text-xs font-bold text-az-gold bg-az-blue-deep/60 px-2 py-1 uppercase tracking-widest self-start mb-2 font-mono-label">
+                <div className="absolute inset-0 bg-gradient-to-t from-az-green-deep/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-5 flex flex-col justify-end">
+                  <span className="text-xs font-bold text-az-gold bg-az-green-deep/60 px-2 py-1 uppercase tracking-widest self-start mb-2 font-mono-label">
                     {photo.tag}
                   </span>
                   <h3 className="text-white font-display text-lg">{photo.title}</h3>
